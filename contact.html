@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بعدٌ آخر - تواصل معنا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="background: url(Pins/20241129_133926.jpg); height: 200px;">
+        <h1>تواصل معنا</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">البعد الآخر</a></li>
+                <li><a href="services.html">التجارب</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-section">
+        <h2>مرحبًا بكم </h2>
+        <p>نحن هنا لجعل الافكار واقعًا..لاننا نؤمن ان هناك دائمًا بعدٌ آخر</p><br>
+        <!-- <form class="contact-form" > -->
+            <!-- <div class="form-group">
+                <label for="name">الاسم</label>
+                <input type="text" id="name" placeholder="الاسم" required>
+            </div>
+            <div class="form-group">
+                <label for="message">رقم التجربة</label>
+                <input type="number" id="age" placeholder="العمر" required>
+            </div><br>
+            
+<button onclick="addUser()">إضافة</button>
+
+
+        </form> -->
+
+
+        
+    </main>
+
+<input class="contact-form" type="text" id="name" placeholder="name"> <br> 
+<input class="contact-form" type="number" id="age" placeholder="number"> <br>
+<center><button  onclick="addUser()" class="add-btn" >إضافة مستخدم</button></center> <br><br>
+
+<h2 class="contact-section">قائمة المستخدمين وارقام التجارب</h2><br>
+
+<center><ul id="users" class="contact-form"></ul></center><br><br>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+<script src="script.js"></script>
+
+    <footer style="background: url(Pins/20241129_133926.jpg); height: 100px;"><br>
+        <p>&copy; 2024 بعدٌ آخر. جميع الحقوق محفوظة</p>
+    </footer>
+</body>
+</html>
+
+

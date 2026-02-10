@@ -1,0 +1,408 @@
+@media screen (max-width:768px)
+{
+.cont{
+    flex-direction: column;
+}
+.menu{
+    font-size: 14px;
+}
+}
+* {
+    box-sizing: border-box;
+}
+.cont{
+    display: flex;
+    flex-direction: row;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    background:rgb(2, 1, 45);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    position:relative; /*هانا نقدر نغير ثبات الراس يا اما ثابت او يتحرك طبيعي*/
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-image {
+    background-image: url( Pins/20241129_133926.jpg); 
+    height: 620px;  /* ارتفاع الصورة الرأسية */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: -20px; /* لتجنب تداخل رأس الصفحة مع الصورة */
+}
+
+.hero-text {
+    
+    position: absolute;
+    bottom: 100px;
+    left: 510px;
+    color: rgb(250, 246, 248);
+}
+
+.hero-text h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    animation: lefti 1.5s ease forwards;
+    opacity: 0;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    animation: righti 1.5s ease forwards 0.5s;
+    opacity: 0;
+}
+@keyframes lefti{
+    from{
+        opacity: o;
+        transform: translateX(0);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes righti{
+    from{
+        opacity: o;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+main {
+    padding: 2px;
+    text-align: center;
+}
+
+
+
+.about-section {
+    max-width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    background: rgb(251, 248, 248);
+    padding: 110px;
+    border-radius: 5px;
+    box-shadow: 10 0 10px rgba(31, 30, 30, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background:rgb(2, 1, 45);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-section {
+    padding: 1px 2px 40px; 
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column; 
+    max-width: 400px;
+    margin: 0 auto; 
+    background:url(Pins/20241129_133926.jpg);
+    box-shadow: 0 0 10px rgba(253, 251, 251, 0.1);
+    backdrop-filter: blur(20px);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    color: #e0f7e9;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 10px;
+    position: relative;
+    
+}
+
+label {
+    
+    margin-bottom: 10px;
+    text-align: right; 
+}
+
+input, textarea {
+    color: #ccc;
+    background: transparent;
+    padding: 7px;
+    border: 1px solid #514e4e;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+
+button {
+    padding: 5px;
+    background-color: #fbf4f4;
+    color: rgb(18, 17, 17);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; 
+    width: 26%;
+    height: 46%;
+    box-shadow:0 0 10px rgba(253, 251, 251, 0.1);
+}
+
+button:hover {
+    background-color: #4a4855; 
+}
+
+main {
+	padding: 13px 20px 20px; /* إضافة هامش في الأعلى للترويسة الثابتة */
+	text-align: center;
+}
+
+.services-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+	gap: 20px;
+	margin: 2px auto;
+	max-width: 1200px;
+}
+
+.service-card {
+	background: url(Pins/20241129_133926.jpg);
+	border-radius: 5px;
+    color: #f1f0f6;
+	padding: 20px;
+	transition: transform 0.3s, background 0.3s;
+	overflow: hidden; /* لتحسين الشكل عند تكبير الصورة */
+	box-shadow: 10 20px 8px rgba(253, 251, 251, 0.1);
+}
+.service-card img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 5px;
+	transition: transform 0.3s; /* تأثير التكبير */
+}
+
+.service-card:hover {
+	color: #949090;
+    background: #080808; /* تغيير لون الخلفية عند التمرير */
+	transform: scale(1.05); /* تكبير الطباعة عند التمرير*/
+}
+
+.about-section {
+    display: flex;
+    flex-direction: row;
+    padding: 19px 29px 29px; 
+}
+.about-text {
+    flex: 1;
+    padding-right: 29px;
+}
+
+
+.about-text h2 {
+    color: #050568;
+    margin-bottom: -20px;
+     padding: 60px;
+}
+.about-text h3 {
+    color: #050568;
+    margin-bottom: 5px;
+     padding: 60px;
+}
+
+.about-text p {
+    margin-bottom: -10px;
+}
+
+.about-images {
+   
+}
+
+.about-images img {
+    width: 100%; 
+    border-radius: 5px;
+    margin-bottom: 15px; 
+}
+
+.about-images img:last-child {
+    margin-bottom: 0; 
+}
+.hover-im{
+  
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+.hover-im:hover{
+    transform: scale(1.1);
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 101vh;
+    background: url(Pins/20241129_133926.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+.wrapper
+{
+    height: 290px;
+width: 380px;
+    background:transparent;
+    border:2px solid rgba(255, 255, 255, .2);
+    color: #e0f7e9;
+    box-shadow: 0 0 10px rgba(253, 251, 251, 0.1);
+    backdrop-filter: blur(15px);
+    border: none;
+    padding: 30px 4opx;
+    text-align: center;
+    border-radius: 10px;
+}
+.wrapper h1{
+    font-size: 37px;
+    text-align: center;
+}
+.wrapper .input-box{
+ position: relative;
+width: 100%;
+height: 50%;
+margin: 30px 0;
+}
+.input-box input{
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    border: 1.1px solid rgba(250, 245, 245, 0.934);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #ccc;
+    padding: 5px 9px 8px 9px;
+}
+.input-box input::placeholder{
+    color: #e0f7e9;
+}
+
+.wrapper .remmber{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: -12px 40px 15px;
+}
+.remmber label input{
+accent-color: white;
+margin-right: 3px;
+}
+
+.wrapper .btn{
+    text-decoration: none;
+    width: 26%;
+    height: 46%;
+    background: #ccc;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(253, 251, 251, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #050568;
+    font-weight: 600;
+    padding: 5px;
+outline: none;
+border: none;
+    animation: no 1.5s infinite;
+}
+@keyframes no{
+    0% , 100%{
+        transform: scale(1);
+    }
+    50%
+{
+    transform: scale(1.1);
+}}
+.text{
+   
+    animation: fadein 3s ease-in-out;
+
+    }
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+        transform: translateY(-90px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(10);
+    }
+}
+.mo{
+    background:rgb(2, 1, 45);
+    color: rgb(15, 15, 15);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px 8px;
+    animation: no 1.5s infinite;
+    width: 130px;
+}
+@keyframes no{
+    0% , 100%{
+        transform: scale(1);
+    }
+    50%
+{
+    transform: scale(1.1);
+}
+
+}
+.add-btn{
+    background:#043362;
+    color:white;
+    width:100px;          /* حجم مربع صغير */
+    height:40px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    display:block;
+    margin:10px auto;
+    font-size:13px;
+    transition:0.3s;
+}
+
+/* عند التأشير */
+.add-btn:hover{
+    background:#94989f;
+}
